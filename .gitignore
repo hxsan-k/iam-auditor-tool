@@ -1,0 +1,10 @@
+# Ignore generated reports and logs
+*.txt
+*.log
+
+# Ignore system files
+.DS_Store
+
+# Ignore temporary files or backups
+*.bak
+*.tmp
