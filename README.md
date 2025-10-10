@@ -27,6 +27,9 @@ Automatically identify excessive IAM permissions to support the **principle of l
 
 ## Project Preview
 
+**Terminal Output**
+![Terminal Output Screenshot](assets/terminal.png)
+
 **S3 Bucket (Report Storage)**  
 ![S3 Bucket Screenshot](assets/s3-bucket.png)
 
