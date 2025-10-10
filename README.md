@@ -63,7 +63,7 @@ iam-permissions-auditor/
 │   ├── s3-bucket.png
 │   ├── sns-topic.png
 │   ├── sns-email.png
-│   └── iam-auditor-demo.gif (to be added)
+│   └── iam-auditor-demo.gif
 └── policies/                   
     └── iam-auditor-policy.json       # IAM policy JSON
 
