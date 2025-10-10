@@ -1,4 +1,4 @@
-# IAM Permissions Auditor
+# IAM Permissions Auditor 🛡️
 
 ![Demo GIF](assets/iam-audit.gif)
 
