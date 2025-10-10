@@ -53,13 +53,17 @@ Automatically identify excessive IAM permissions to support the **principle of l
 ## Repository Structure
 
 ```
-iam-permissions-auditor/
-├── iam.sh
-├── assets/
-│ ├── iam-audit.gif
-│ ├── s3-bucket.png
-│ ├── sns-topic.png
-│ └── sns-email.png
-├── policies/
-│ └── iam-auditor-inline.json
-└── README.md
+iam-permissions-auditor/ 
+├── iam-auditor.sh                    # main Bash script
+├── README.md                   
+├── .gitignore                  
+├── docs/
+│   └── considerations.md             # notes on potenital future improvements and considerations
+├── assets/                           # screenshots and demo GIF
+│   ├── s3-bucket.png
+│   ├── sns-topic.png
+│   ├── sns-email.png
+│   └── iam-auditor-demo.gif (to be added)
+└── policies/                   
+    └── iam-auditor-policy.json       # IAM policy JSON
+
