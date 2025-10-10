@@ -1,0 +1,58 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "IamReadInventory",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListUsers",
+                "iam:ListGroups",
+                "iam:ListRoles",
+                "iam:ListAttachedUserPolicies",
+                "iam:ListAttachedGroupPolicies",
+                "iam:ListAttachedRolePolicies",
+                "iam:ListUserPolicies",
+                "iam:GetUserPolicy",
+                "iam:ListGroupPolicies",
+                "iam:GetGroupPolicy",
+                "iam:ListRolePolicies",
+                "iam:GetRolePolicy",
+                "iam:GetPolicy",
+                "iam:GetPolicyVersion",
+                "sts:GetCallerIdentity"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "LegacyViewOnlyExtras",
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetAccountPasswordPolicy",
+                "iam:GetAccountAuthorizationDetails",
+                "iam:GetCredentialReport",
+                "iam:GetGroup",
+                "iam:GetRole",
+                "iam:GetUser"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "WriteReportAndAlert",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::iam-audit-reports-hasan",
+                "arn:aws:s3:::iam-audit-reports-hasan/*"
+            ]
+        },
+        {
+            "Sid": "PublishAlerts",
+            "Effect": "Allow",
+            "Action": "sns:Publish",
+            "Resource": "arn:aws:sns:eu-west-2:727646481331:iam-audit-reports-hasan"
+        }
+    ]
+}
